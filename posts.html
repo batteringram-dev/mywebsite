@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Blog • Sriram</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+
+    <aside class="sidebar">
+        <img src="profile.jpg" class="profile-pic">
+        <h1 class="name">Sriram</h1>
+        <p class="role">Data Engineer</p>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <h2>Blog</h2>
+        <div id="post-list"></div>
+    </main>
+
+</div>
+
+<script>
+fetch("posts.json")
+  .then(res => res.json())
+  .then(posts => {
+      const container = document.getElementById("post-list");
+      posts.forEach(p => {
+          const el = document.createElement("div");
+          el.className = "post-item";
+          el.innerHTML = `
+              <a href="post.html?file=${p.file}">
+                  <h3>${p.title}</h3>
+                  <p>${p.date}</p>
+              </a>
+          `;
+          container.appendChild(el);
+      });
+  });
+</script>
+
+</body>
+</html>
