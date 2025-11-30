@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Sriram • Personal Website</title>
-    <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sriram • Data Engineer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <div class="container">
 
-    <!-- Left Sidebar -->
+    <!-- Sidebar -->
     <aside class="sidebar">
+        <img src="profile.jpg" class="profile-pic" alt="Sriram">
+
         <h1 class="name">Sriram</h1>
         <p class="role">Data Engineer • Builder</p>
 
@@ -33,30 +35,42 @@
     <main class="content">
 
         <section id="about">
-            <h2>About Me</h2>
+            <h2>About</h2>
             <p>
-                I'm Sriram — a Data Engineer obsessed with Spark, SQL, building data systems,
-                and crafting scalable pipelines.  
-                I write about data engineering, system design, and the things I learn.
+                I'm Sriram — a Data Engineer who loves Spark, SQL, and building 
+                high-performance data systems.  
+                I write about data engineering, architecture, and things I learn every day.
             </p>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
-            <ul>
-                <li><strong>Event-Driven Mini Data Pipeline</strong> – Databricks + Delta Live Tables + GCP</li>
-                <li><strong>Airbnb ELT Pipeline</strong> – Snowflake + Spark + GCS</li>
-                <li><strong>Uber & Lyft Analysis</strong> – Python + Pandas</li>
-            </ul>
+
+            <div class="project">
+                <h3>Event-Driven Mini Pipeline</h3>
+                <p>A Databricks + Delta + GCP event-driven data pipeline.</p>
+            </div>
+
+            <div class="project">
+                <h3>Airbnb ELT Pipeline</h3>
+                <p>Spark + Snowflake + GCS ingestion and transformations.</p>
+            </div>
+
+            <div class="project">
+                <h3>Uber Data Analysis</h3>
+                <p>Explored Uber/Lyft dataset and weather data using Python & Pandas.</p>
+            </div>
+
         </section>
 
         <section id="contact">
             <h2>Contact</h2>
-            <p>Email me at: <strong>your_email@gmail.com</strong></p>
+            <p>
+                Email me: <strong>your_email@gmail.com</strong>
+            </p>
         </section>
 
     </main>
-
 </div>
 
 <script src="script.js"></script>
