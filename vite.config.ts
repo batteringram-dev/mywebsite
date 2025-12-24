@@ -9,6 +9,9 @@ export default defineConfig(({ mode }) => ({
   // In development, always use "/" for local testing
   // In production, use the VITE_BASE_PATH env variable or default to "/"
   base: mode === "development" ? "/" : (process.env.VITE_BASE_PATH || "/"),
+  build: {
+    outDir: "docs",
+  },
   server: {
     host: "::",
     port: 8080,
