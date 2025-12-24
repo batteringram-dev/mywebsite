@@ -7,7 +7,7 @@ interface LayoutProps {
 }
 
 const navLinks = [
-  { to: "/", label: "Writing" },
+  { to: "/", label: "Blogs" },
   { to: "/library", label: "Library" },
   { to: "/contact", label: "Contact" },
 ];
@@ -20,6 +20,7 @@ const socialLinks = [
 
 export function Layout({ children }: LayoutProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [imageError, setImageError] = useState(false);
   const location = useLocation();
 
   return (
@@ -28,7 +29,7 @@ export function Layout({ children }: LayoutProps) {
       <header className="lg:hidden fixed top-0 left-0 right-0 z-40 bg-background/95 backdrop-blur-sm border-b border-border">
         <div className="flex items-center justify-between px-6 py-4">
           <NavLink to="/" className="font-serif text-xl font-semibold text-foreground">
-            Your Name
+            Sriram Kumar
           </NavLink>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -83,15 +84,24 @@ export function Layout({ children }: LayoutProps) {
             {/* Profile Section */}
             <div className="mb-8">
               <div className="w-16 h-16 rounded-full bg-muted mb-4 overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-muted to-accent flex items-center justify-center text-muted-foreground font-serif text-xl">
-                  YN
-                </div>
+                {!imageError ? (
+                  <img 
+                    src="/profile.jpg" 
+                    alt="Sriram Kumar" 
+                    className="w-full h-full object-cover"
+                    onError={() => setImageError(true)}
+                  />
+                ) : (
+                  <div className="w-full h-full bg-gradient-to-br from-muted to-accent flex items-center justify-center text-muted-foreground font-serif text-xl">
+                    SK
+                  </div>
+                )}
               </div>
               <h1 className="font-serif text-2xl font-semibold text-sidebar-foreground mb-2">
-                Your Name
+                Sriram Kumar
               </h1>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Writer, reader, and thinker exploring the intersection of creativity, technology, and intentional living.
+                Data Engineer passionate about working with data and building robust and scalable pipelines.
               </p>
             </div>
 

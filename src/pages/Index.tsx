@@ -18,7 +18,7 @@ const Index = () => {
         {/* Page Header */}
         <header className="mb-12 animate-fade-in">
           <h1 className="font-serif text-4xl md:text-5xl font-semibold text-foreground mb-4">
-            Writing
+            Blogs
           </h1>
           <p className="text-lg text-muted-foreground max-w-xl">
             Thoughts on creativity, technology, and the art of intentional living.

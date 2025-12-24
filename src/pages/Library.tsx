@@ -15,31 +15,36 @@ interface Resource {
 }
 
 const currentlyReading: Book = {
-  title: "The Master and His Emissary",
-  author: "Iain McGilchrist",
-  description: "A profound exploration of how our divided brain shapes our world and experience.",
+  title: "Sapiens",
+  author: "Yuval Noah Harari",
+  description: "A brief history of humankind and how Homo sapiens conquered the world.",
 };
 
 const favoriteBooks: Book[] = [
   {
-    title: "Thinking, Fast and Slow",
-    author: "Daniel Kahneman",
-    description: "The definitive book on how we think, decide, and the biases that shape our reasoning.",
+    title: "48 Laws of Power",
+    author: "Robert Greene",
+    description: "A guide to understanding power dynamics and human nature through historical examples.",
   },
   {
-    title: "Pilgrim at Tinker Creek",
-    author: "Annie Dillard",
-    description: "A beautifully written meditation on nature and the sacred in everyday life.",
+    title: "Atomic Habits",
+    author: "James Clear",
+    description: "An easy and proven way to build good habits and break bad ones through small, incremental changes.",
   },
   {
-    title: "Bird by Bird",
-    author: "Anne Lamott",
-    description: "Wise and witty advice on writing and life from a master of the craft.",
+    title: "Designing Data-Intensive Applications",
+    author: "Martin Kleppmann",
+    description: "The big ideas behind reliable, scalable, and maintainable systems for data-intensive applications.",
   },
   {
-    title: "Essentialism",
-    author: "Greg McKeown",
-    description: "The disciplined pursuit of less but better—a guide to doing what matters most.",
+    title: "Poor Charlie's Almanack",
+    author: "Charlie Munger",
+    description: "The wit and wisdom of Charlie Munger, covering mental models, investing, and life philosophy.",
+  },
+  {
+    title: "The Almanack of Naval Ravikant",
+    author: "Eric Jorgenson",
+    description: "A guide to wealth and happiness, compiled from Naval Ravikant's wisdom on building wealth and living well.",
   },
 ];
 
