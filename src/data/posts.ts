@@ -10,6 +10,68 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    id: "setup-deepseek-locally-with-ollama",
+    title: "Setting Up DeepSeek Locally: Your Private AI Assistant",
+    date: "2025-01-16",
+    excerpt: "Learn how to set up DeepSeek's Coder or R1 model locally using Ollama. Run LLMs on your machine with complete privacy and no API costs.",
+    content: `Isn't it fun to have a bud with you in your machine who can quickly help you answer your questions or doubts? I know, I know - you can use ChatGPT or Gemini or Claude in your browser, but setting up an LLM locally sounds super cool, and your queries and data are private ASF. I am going to help you quickly set up DeepSeek's Coder or R1 model locally in this quick read.
+
+## Let's Setup Ollama
+
+Before running your desired model locally, you need to first set up Ollama, an open-source platform that lets you run LLMs on your local machine easily. Yes, easily. Go to this link to download Ollama for your OS, but in this read, I am going to show you how to install and run them via Terminal - because isn't it fun? :)
+
+Let's install Ollama:
+
+\`\`\`bash
+brew install ollama
+\`\`\`
+
+Once it's installed, it's obvious what we must do:
+
+\`\`\`bash
+ollama --version
+\`\`\`
+
+You should see a version number once you run the above command. It's correctly installed if you do. Now, you need to start the local Ollama server:
+
+\`\`\`bash
+ollama serve
+\`\`\`
+
+## Pull DeepSeek R1
+
+Once it has started running locally, you can now pull your model from Ollama. Here, I am pulling DeepSeek's R1 model that has 7 Billion parameters:
+
+\`\`\`bash
+ollama pull deepseek-r1:7b
+\`\`\`
+
+You could pull a powerful R1 model with 13 or 70 billion parameters, but they require more computation resources and memory. If your machine is not capable or pushing its limits to run a 7B parameter model, you could run DeepSeek's coder that has only 1.3B parameter:
+
+\`\`\`bash
+ollama pull deepseek-coder:1.3b
+\`\`\`
+
+## Run DeepSeek R1
+
+Once you have run the above command, it would take some time as you are pulling/downloading a pre-trained AI model from Ollama's servers to your local machine. But don't worry, this is only a one-time run and won't happen over and over again when you run prompts. Enough talking, let's get to running and prompting the beast!
+
+\`\`\`bash
+ollama run deepseek-r1:7b
+\`\`\`
+
+Now let's prompt it:
+
+\`\`\`bash
+ollama run deepseek-r1:7b --prompt "Explain Binary Search Tree"
+ollama run deepseek-r1:7b --prompt "Will AI replace Engineers :("
+\`\`\`
+
+It's the same process to set up DeepSeek Coder too. This is so cool, right? You've just turned your machine into a personal AI lab. If you run the above commands and set up DeepSeek locally — hurray! You're officially an AI/LLM Engineer now!!! :D`,
+    category: "AI/ML",
+    readingTime: "5 min read"
+  },
+  {
     id: "idempotency-in-data-pipelines",
     title: "Idempotency in Data Pipelines: Why It Matters and How to Achieve It",
     date: "2025-01-15",
