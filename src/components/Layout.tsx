@@ -13,9 +13,9 @@ const navLinks = [
 ];
 
 const socialLinks = [
-  { href: "https://github.com", icon: Github, label: "GitHub" },
-  { href: "https://linkedin.com", icon: Linkedin, label: "LinkedIn" },
-  { href: "https://twitter.com", icon: Twitter, label: "X" },
+  { href: "https://github.com/batteringram-dev", icon: Github, label: "GitHub" },
+  { href: "https://www.linkedin.com/in/sriramkumar2001/", icon: Linkedin, label: "LinkedIn" },
+  { href: "https://x.com/batteringramdev", icon: Twitter, label: "X" },
 ];
 
 export function Layout({ children }: LayoutProps) {
@@ -101,7 +101,7 @@ export function Layout({ children }: LayoutProps) {
                 Sriram Kumar
               </h1>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Data Engineer passionate about working with data and building robust and scalable pipelines.
+                Data Engineer passionate about building scalable, production-ready data pipelines and reliable data platforms.
               </p>
             </div>
 
