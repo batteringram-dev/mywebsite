@@ -48,7 +48,7 @@ jobs:
         id: base_path
         run: |
           # Manual base path override (uncomment and set if auto-detection doesn't work)
-          # BASE_PATH="/mywebsite/"
+          # BASE_PATH="/personal-blog-website/"
           
           # Check if manual base path is set
           if [ -n "$BASE_PATH" ]; then
