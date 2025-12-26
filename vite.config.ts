@@ -7,7 +7,7 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => ({
   // GitHub Pages base path
   // Dev: localhost
-  // Prod: https://batteringram-dev.github.io/mywebsite/
+  // Prod: https://batteringram-dev.github.io/personal-blog-website/
   base: mode === "development" ? "/" : "/personal-blog-website/",
 
   build: {
